@@ -1,7 +1,7 @@
 # My GitHub documentations
 
 Use the following links to go to the corresponding documentation of my GitHub repositories:
-- [shlibs](./index.html "shlibs documentation")
+- [shlibs](./shlibs "shlibs documentation")
 - [xtypeof](./xtypeof "xtypeof documentation")
 - [racepacks](# "racepacks documentation")
 - [dbindjs](# "dbindjs documentation")

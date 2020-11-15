@@ -1,5 +1,7 @@
 /*
 /.*
 
+!/shlibs
+!/xtypeof
 !.gitignore
 !README.md
