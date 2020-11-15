@@ -1,6 +1,8 @@
 /*
 /.*
 
+!/dbindjs
+!/racepacks
 !/shlibs
 !/xtypeof
 !.gitignore
