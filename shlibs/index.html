@@ -12,19 +12,23 @@
         let counter = 0
         let tlhandle = setInterval(function () {
           counter++
-          if(counter === 10) {
-            window.location.href = 'https://shlibs.net';
-          } else {
+          if(counter <= 10)
             counterspan.innerText = (10 - counter) + '';
+          if(counter === 10) {
+            window.history.replaceState(window.history.state, 'Docs Root', '../');
+            window.location.href = 'https://shlibs.net';
+          } else if (counter > 10) {
+            clearInterval(tlhandle);
+            window.location.href = '../';
           }
-
-        }, 1000)
+        }, 1000);
 
         const directLinkOnClick = function() {
           clearInterval(tlhandle);
           document.title = "Redirected to https://shlibs.net";
           redirectInfo.innerText = "Redirected to https://shlibs.net";
-          window.history.back();
+          window.history.replaceState(window.history.state, 'Docs Root', '../');
+          window.location.href = '../';
         };
         directLink.onclick = directLinkOnClick;
 
