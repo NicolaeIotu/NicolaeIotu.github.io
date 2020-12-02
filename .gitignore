@@ -4,6 +4,7 @@
 !/dbindjs
 !/racepacks
 !/shlibs
+!/typelike
 !/xtypeof
 !.gitignore
 !README.md
